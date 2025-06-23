@@ -4,7 +4,10 @@ import "./index.css";
 import App from "./App.jsx";
 import { Toaster } from "sonner";
 import { inject } from "@vercel/analytics";
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
 inject();
+injectSpeedInsights();
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
