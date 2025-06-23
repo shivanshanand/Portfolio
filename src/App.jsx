@@ -20,7 +20,6 @@ const App = () => {
   if (isLoading) return <EntryBlast />;
   return (
     <>
-      <Analytics />
       <Navbar />
       <HeroSection />
       <About />
