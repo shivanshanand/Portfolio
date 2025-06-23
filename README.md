@@ -28,5 +28,3 @@ This is my personal developer portfolio built using **React**, **Vite**, **Tailw
 ## 🖥️ Live Demo
 
 **[👉 Visit Portfolio](https://your-portfolio.vercel.app/)**
-
-Built with ❤️ by Shivansh using Vite + React
