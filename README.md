@@ -1,12 +1,32 @@
-# React + Vite
+# 🚀 Shivansh's Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio built using **React**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **DaisyUI**. It showcases my skills, projects, services, and includes a responsive, dark-themed UI with smooth animations and a custom 3D intro blast.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React + Vite
+- 🎨 Tailwind CSS + DaisyUI
+- 🧠 Framer Motion (animations)
+- 🌐 Responsive Design
+- 🎮 @react-three/fiber (3D Particle Loader)
+- ✨ Custom Themes (Dark & Light)
+- 📬 EmailJS (for Contact Form)
+- 📦 Toast Notifications
+- 🧰 Deployed via Vercel
 
-## Expanding the ESLint configuration
+## 📸 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Distorted circular animated **logo**
+- Interactive **hero section**
+- Scroll animations with **Framer Motion**
+- **Project showcase** with tech stack chips and GitHub links
+- Fully **responsive** on all devices
+- Customizable **themes** (Dark and Light)
+- 3D **EntryBlast** loader animation on startup
+- Contact form with **email delivery + toast** confirmation
+
+## 🖥️ Live Demo
+
+**[👉 Visit Portfolio](https://your-portfolio.vercel.app/)**
+
+Built with ❤️ by Shivansh using Vite + React
