@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Logo from "./Logo";
-import { FiSun, FiDownload, FiMenu, FiX } from "react-icons/fi";
+import { FiSun, FiDownload, FiMenu, FiX, FiMoon } from "react-icons/fi";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -18,11 +18,19 @@ const applyTheme = (theme) => {
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [theme, setTheme] = useState("halloween");
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "halloween";
+    setTheme(savedTheme);
     applyTheme(savedTheme);
   }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "halloween" ? "dracula" : "halloween";
+    setTheme(newTheme);
+    applyTheme(newTheme);
+  };
 
   return (
     <motion.nav
@@ -32,7 +40,6 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full z-50 shadow-md backdrop-blur bg-base-100/80 border-b border-base-content/10"
     >
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
         <Logo />
 
         {/* Desktop Navigation */}
@@ -66,27 +73,13 @@ const Navbar = () => {
           )}
 
           {/* Theme Selector */}
-          <div className="dropdown dropdown-start ml-4">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-circle btn-sm bg-base-200 border border-base-content/20 text-base-content hover:border-primary hover:text-primary"
-            >
-              <FiSun size={18} />
-            </div>
-
-            <ul
-              tabIndex={0}
-              className="dropdown-content z-[1] menu p-2 shadow-lg bg-base-100 mt-2 rounded-box w-36 border border-base-content/10 left-0"
-            >
-              <li>
-                <button onClick={() => applyTheme("halloween")}>Dark</button>
-              </li>
-              <li>
-                <button onClick={() => applyTheme("dracula")}>Light</button>
-              </li>
-            </ul>
-          </div>
+          <button
+            onClick={toggleTheme}
+            className="btn btn-circle btn-sm bg-base-200 border border-base-content/20 text-base-content hover:border-primary hover:text-primary"
+            aria-label="Toggle Theme"
+          >
+            {theme === "halloween" ? <FiMoon size={18} /> : <FiSun size={18} />}
+          </button>
         </div>
 
         {/* Mobile Hamburger Menu */}
@@ -129,18 +122,16 @@ const Navbar = () => {
           )}
 
           {/* Theme toggle */}
-          <div className="flex gap-4 pt-2">
+          <div className="pt-2">
             <button
-              onClick={() => applyTheme("halloween")}
-              className="px-4 py-2 rounded-md bg-base-200 hover:bg-base-300 text-sm text-base-content border border-base-content/10"
+              onClick={toggleTheme}
+              className="btn btn-circle btn-sm bg-base-200 border border-base-content/20 text-base-content hover:border-primary hover:text-primary"
             >
-              Dark
-            </button>
-            <button
-              onClick={() => applyTheme("dracula")}
-              className="px-4 py-2 rounded-md bg-base-200 hover:bg-base-300 text-sm text-base-content border border-base-content/10"
-            >
-              Light
+              {theme === "halloween" ? (
+                <FiMoon size={18} />
+              ) : (
+                <FiSun size={18} />
+              )}
             </button>
           </div>
         </div>
