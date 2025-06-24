@@ -32,29 +32,24 @@ const HeroSection = () => {
         </motion.a>
       </motion.div>
 
-      {/* ========== RIGHT: Profile Bubble ========== */}
+      {/* === Avatar Bubble - Clean Circular Style === */}
       <motion.div
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "spring", delay: 0.4 }}
         className="flex justify-center md:justify-end"
       >
-        <motion.div
+        <motion.img
+          src="/profilee.jpeg"
+          alt="Shivansh"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-          className="relative w-64 h-64 md:w-80 md:h-80 bg-primary/10 rounded-full overflow-hidden backdrop-blur-lg border-2 border-primary/30 shadow-[0_0_40px_rgba(34,211,238,0.4)]"
-        >
-          <img
-            src="/profile.png"
-            alt="Shivansh"
-            className="w-full h-full object-cover"
-            style={{
-              clipPath: "ellipse(60% 70% at 50% 50%)",
-              filter: "brightness(1.1) contrast(1.05)",
-            }}
-          />
-          <div className="absolute inset-0 rounded-full bg-primary/10 blur-2xl animate-pulse" />
-        </motion.div>
+          className="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover object-top border-4 border-primary shadow-[0_0_40px_rgba(34,211,238,0.4)]"
+          style={{
+            filter: "brightness(1.08) contrast(1.05)",
+            objectPosition: "center 0px",
+          }}
+        />
       </motion.div>
     </section>
   );
