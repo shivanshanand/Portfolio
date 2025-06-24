@@ -8,10 +8,9 @@ This is my personal developer portfolio built using **React**, **Vite**, **Tailw
 - 🎨 Tailwind CSS + DaisyUI
 - 🧠 Framer Motion (animations)
 - 🌐 Responsive Design
-- 🎮 @react-three/fiber (3D Particle Loader)
 - ✨ Custom Themes (Dark & Light)
 - 📬 EmailJS (for Contact Form)
-- 📦 Toast Notifications
+- 📦 Toast Notification
 - 🧰 Deployed via Vercel
 
 ## 📸 Features
@@ -22,7 +21,6 @@ This is my personal developer portfolio built using **React**, **Vite**, **Tailw
 - **Project showcase** with tech stack chips and GitHub links
 - Fully **responsive** on all devices
 - Customizable **themes** (Dark and Light)
-- 3D **EntryBlast** loader animation on startup
 - Contact form with **email delivery + toast** confirmation
 
 ## 🖥️ Live Demo
