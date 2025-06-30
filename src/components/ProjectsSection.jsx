@@ -27,20 +27,6 @@ const projects = [
     github:
       "https://github.com/kalviumcommunity/S66_Shivansh_Anand_Capstone_FuelFundr",
   },
-  {
-    title: "Movie Recommendation System",
-    description:
-      "Personalized movie recommendation app using user preferences, watch tracking, and modern UI with DaisyUI and animations.",
-    tech: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Express",
-      "DaisyUI",
-      "Framer Motion",
-    ],
-    github: "https://github.com/shivanshanand",
-  },
 ];
 
 const ProjectsSection = () => {
