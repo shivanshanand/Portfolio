@@ -27,6 +27,14 @@ const projects = [
     github:
       "https://github.com/kalviumcommunity/S66_Shivansh_Anand_Capstone_FuelFundr",
   },
+  {
+    title: "Movie Recommender System",
+    description:
+      "An AI-powered movie recommender web app using content-based filtering. Built with Python and Streamlit, it suggests similar movies based on user input. Deployed on Heroku with Git LFS support for handling large files.",
+    tech: ["Python", "Streamlit", "Scikit-learn", "Pandas", "Pickle"],
+    github: "https://github.com/shivanshanand/Movie-recommender-system",
+    demo: "https://ks5iza5dqj23mt954kchqc.streamlit.app/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -93,17 +101,30 @@ const ProjectsSection = () => {
                 ))}
               </div>
 
-              {/* GitHub Button */}
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-primary text-black font-semibold px-4 py-2 rounded hover:bg-primary/90 transition"
-                >
-                  View on GitHub
-                </a>
-              )}
+              {/* GitHub and live demo button*/}
+              <div className="flex gap-4">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-primary text-black font-semibold px-4 py-2 rounded hover:bg-primary/90 transition"
+                  >
+                    View on GitHub
+                  </a>
+                )}
+
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600 transition"
+                  >
+                    Live Demo
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}

@@ -9,14 +9,18 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import {
-  SiTailwindcss,
+  SiReact,
   SiMongodb,
   SiPostman,
   SiSocketdotio,
   SiFigma,
+  SiTailwindcss,
   SiPassport,
   SiRender,
   SiNetlify,
+  SiHeroku,
+  SiPython,
+  SiStreamlit,
 } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
 
@@ -26,22 +30,48 @@ const iconMap = {
   JavaScript: <FaJs className="text-yellow-400" />,
   React: <FaReact className="text-cyan-400" />,
   "Tailwind CSS": <SiTailwindcss className="text-cyan-500" />,
+  "React Native": <SiReact className="text-cyan-500" />,
   "Node.js": <FaNodeJs className="text-green-500" />,
   Express: <BiCodeAlt className="text-white" />,
   MongoDB: <SiMongodb className="text-green-400" />,
   "Passport.js": <SiPassport className="text-red-400" />,
   "Socket.IO": <SiSocketdotio className="text-white" />,
+  Python: <SiPython className="text-yellow-500" />,
   Figma: <SiFigma className="text-[#F24E1E]" />,
   GitHub: <FaGithub className="text-white" />,
+  Streamlit: <SiStreamlit className="text-pink-600" />,
   Postman: <SiPostman className="text-orange-500" />,
   Netlify: <SiNetlify className="text-green-400" />,
   Render: <SiRender className="text-white" />,
+  Heroku: <SiHeroku className="text-purple-600" />,
 };
 
 const skills = {
-  Frontend: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
-  Backend: ["Node.js", "Express", "MongoDB", "Passport.js", "Socket.IO"],
-  "Tools & Platforms": ["Figma", "GitHub", "Postman", "Netlify", "Render"],
+  Frontend: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Tailwind CSS",
+    "React Native",
+  ],
+  Backend: [
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Passport.js",
+    "Socket.IO",
+    "Python",
+  ],
+  "Tools & Platforms": [
+    "Figma",
+    "GitHub",
+    "Streamlit",
+    "Postman",
+    "Netlify",
+    "Render",
+    "Heroku",
+  ],
 };
 
 const SkillsSection = () => {
