@@ -33,7 +33,7 @@ const projects = [
       "An AI-powered movie recommender web app using content-based filtering. Built with Python and Streamlit, it suggests similar movies based on user input. Deployed on Heroku with Git LFS support for handling large files.",
     tech: ["Python", "Streamlit", "Scikit-learn", "Pandas", "Pickle"],
     github: "https://github.com/shivanshanand/Movie-recommender-system",
-    demo: "https://ks5iza5dqj23mt954kchqc.streamlit.app/",
+    demo: "https://fd2vdotdq9j3ouguqexegy.streamlit.app/",
   },
 ];
 
