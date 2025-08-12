@@ -8,7 +8,7 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Let's Build", href: "#projects" },
   { name: "My Toolbox", href: "#toolbox" },
-  { name: "Resume", href: "/Shivansh_Resume.pdf", download: true },
+  { name: "Resume", href: "/Shivansh_Anand.pdf", download: true },
 ];
 
 const applyTheme = (theme) => {

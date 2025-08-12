@@ -6,6 +6,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
+    title: "FuelFundr",
+    description:
+      "MERN-based crowdfunding app with campaign tracking, user updates, and backend-first architecture for seamless donations.",
+    tech: ["React", "Node.js", "MongoDB", "Express", "JWT", "Tailwind CSS"],
+    github: "https://github.com/shivanshanand/FuelFundr",
+  },
+  {
     title: "SafeSpace AI",
     description:
       "Anonymous AI-powered platform to report harassment and discrimination, supporting secure evidence upload and AI-generated incident reports.",
@@ -18,14 +25,6 @@ const projects = [
       "Tailwind CSS",
     ],
     github: "https://github.com/shivanshanand/GNEC-Hackathon",
-  },
-  {
-    title: "FuelFundr (Working)",
-    description:
-      "MERN-based crowdfunding app with campaign tracking, user updates, and backend-first architecture for seamless donations.",
-    tech: ["React", "Node.js", "MongoDB", "Express", "JWT", "Tailwind CSS"],
-    github:
-      "https://github.com/kalviumcommunity/S66_Shivansh_Anand_Capstone_FuelFundr",
   },
   {
     title: "Movie Recommender System",
